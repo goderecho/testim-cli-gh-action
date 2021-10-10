@@ -16,8 +16,9 @@ inputs:
     description: 'The test suite to run'
     required: true
   testId:
-    description: 'The id of the test to run. If missing, will run whole suite'
-    required: true
+    description: 'The id of the test to run. If missing or empty string, will run whole suite'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
