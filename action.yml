@@ -15,6 +15,9 @@ inputs:
   suite:
     description: 'The test suite to run'
     required: true
+  testId:
+    description: 'The id of the test to run. If missing, will run whole suite'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -23,3 +26,4 @@ runs:
     - ${{ inputs.project }}
     - ${{ inputs.grid }}
     - ${{ inputs.suite }}
+    - ${{ inputs.testId }}
