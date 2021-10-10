@@ -19,6 +19,10 @@ inputs:
     description: 'The id of the test to run. If missing or empty string, will run whole suite'
     required: false
     default: ''
+  parallel:
+    description: 'The `parralel` cli param. Set the amount of concurrency to use for this run. Note, this is constrained by your testim account level'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -28,3 +32,4 @@ runs:
     - ${{ inputs.grid }}
     - ${{ inputs.suite }}
     - ${{ inputs.testId }}
+    - ${{ inputs.parallel }}
