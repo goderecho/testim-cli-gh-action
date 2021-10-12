@@ -20,7 +20,7 @@ inputs:
     required: false
     default: ''
   parallel:
-    description: 'The `parralel` cli param. Set the amount of concurrency to use for this run. Note, this is constrained by your testim account level'
+    description: 'The `parallel` cli param. Set the amount of concurrency to use for this run. Note, this is constrained by your testim account level'
     required: false
     default: ''
 runs:
