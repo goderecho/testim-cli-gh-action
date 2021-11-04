@@ -7,7 +7,7 @@ _What is in this change_
 ## Reviewers
 _Who should review this? Request reviews from appropriate parties via the pull request "request reviewers" pane. Provide additional information or justification for reviews here. _
 
-## Impact Assessement
+## Impact Assessment
 _What impact will this change have?_
 
 ## How was this tested?
